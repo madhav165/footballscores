@@ -13,7 +13,8 @@ public class FootballScores {
             String title = doc.title();
             Elements matches = doc.getElementsByClass("match");
             //MatchObject [] matches = new MatchObject[divs1.size()];
-            System.out.format("%-20s%-30s%-10s%-30s%5s", "Status", "Team 1", "VS", "Team2", "\n\n"); 
+            System.out.format("%-20s%-30s%-10s%-30s%5s", "Status", "Team 1", "vs", "Team2", "\n");
+            System.out.format("%-20s%-30s%-10s%-30s%5s", "======", "======", "==", "=====", "\n\n");
             for (Element match : matches) {
                 Element status = match.getElementsByClass("status").first();
                 Element team1 = match.getElementsByClass("module-team").first();
